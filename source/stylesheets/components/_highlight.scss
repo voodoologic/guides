@@ -90,7 +90,7 @@
   }
 
   .ribbon {
-    @include position(absolute, 0.22em 0 null null);
+    @include position(absolute, 0.33em -1px null null);
     @include size(52px 20px);
     background: 0 0 no-repeat;
     background-size: 52px 20px;
