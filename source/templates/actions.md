@@ -20,7 +20,7 @@ the `actions` hook:
 ```app/components/single-post.js
 export default Ember.Component.extend({
   actions: {
-    toggleBody() {
+    toggleBody: function() {
       this.toggleProperty('isShowingBody');
     }
   }
@@ -45,7 +45,7 @@ containing the post model:
 ```app/components/single-post.js
 export default Ember.Component.extend({
   actions: {
-    select(post) {
+    select: function(post) {
       console.log(post.get('title'));
     }
   }
@@ -123,7 +123,7 @@ Let's assume we have an action handler that prints its first parameter:
 
 ```js
 actions: {
-  bandDidChange(newValue) {
+  bandDidChange: function(newValue) {
     console.log(newValue);
   }
 }
